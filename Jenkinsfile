@@ -2,7 +2,7 @@ pipeline
 {
 		agent any
 	          stages {
-	              stage('pull) {
+	              stage('pull') {
 	                   steps{
 	                      script{
 	                      checkout([$class: 'GitSCM', branches: [[name: '*/master']],
