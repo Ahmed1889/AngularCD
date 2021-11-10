@@ -7,7 +7,7 @@ pipeline
 	                      script{
 	                      checkout([$class: 'GitSCM', branches: [[name: '*/master']],
 	                         userRemoteConfigs: [[
-	                             credentialsId: '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',
+	                             credentialsId: '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',
 	                             url: 'https://github.com/Ahmed1889/AngularCD.git']]])
 	                             }
 	                             }
