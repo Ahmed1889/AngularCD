@@ -21,7 +21,7 @@ pipeline
 	                      }*/
 	                stage('docker'){
 	                      steps {
-	                      sh "sudo -S ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml "
+	                      sh "sudo -S ansible-playbook Ansible/docker.yml -i Ansible/inventory/host.yml "
 	                      }
 	                }
 	          }
