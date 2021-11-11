@@ -12,12 +12,17 @@ pipeline
 	                             }
 	                             }
 	                             }
-	              stage('Build'){
+	              /*stage('Build'){
 	              steps{
 	              script {
 	                      		sh "sudo -S ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml "
 	                      }
 	                      }
+	                      }*/
+	                stage('docker'){
+	                      steps {
+	                      sh "sudo -S ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml "
 	                      }
+	                }
 	          }
 }
